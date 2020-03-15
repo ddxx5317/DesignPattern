@@ -4,19 +4,19 @@ package com.ddxx.builder;
  */
 public class Director {
 	
-    private Builder build;
+    private Builder builder;
     
-    public Director(Builder build){
-        this.build = build;
+    public Director(Builder builder){
+        this.builder = builder;
     }
 
     /***
      * 组成产品的方法，组成的过程可能是有顺序的
      */
     public Car construct(){
-        build.buildSteeringWheel();
-        build.buildGlass();
-        build.buildEngine();
-        return build.getCar();
+        builder.buildSteeringWheel();
+        builder.buildGlass();
+        builder.buildEngine();
+        return builder.getCar();
     }
 }

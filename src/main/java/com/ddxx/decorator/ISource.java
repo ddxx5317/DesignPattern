@@ -1,5 +1,5 @@
 package com.ddxx.decorator;
 
-public interface Sourceable {
+public interface ISource {
 	public void method();
 }

@@ -10,11 +10,11 @@ package com.ddxx.decorator;
 	2、动态的为一个对象增加功能，而且还能动态撤销。（继承不能做到这一点，继承的功能是静态的，不能动态增删。）
 	缺点：产生过多相似的对象，不易排错！
  */
-public class Decorator implements Sourceable {
+public class Decorator implements ISource {
  
-	private Sourceable source;
+	private ISource source;
 	
-	public Decorator(Sourceable source){
+	public Decorator(ISource source){
 		super();
 		this.source = source;
 	}
