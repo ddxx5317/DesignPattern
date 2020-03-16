@@ -3,6 +3,8 @@ package com.ddxx.chain;
 import org.apache.commons.lang.StringUtils;
 
 public class ValidateHandler extends Handler {
+
+    @Override
     public void doHandler(Member member) {
         if(StringUtils.isEmpty(member.getLoginName()) ||
                 StringUtils.isEmpty(member.getLoginPass())){

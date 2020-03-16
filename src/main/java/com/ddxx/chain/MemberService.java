@@ -11,5 +11,4 @@ public class MemberService implements IMemberService{
 
         builder.build().doHandler(new Member(loginName,loginPass));
     }
-
 }
