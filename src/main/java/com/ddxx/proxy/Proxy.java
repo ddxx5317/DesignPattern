@@ -9,7 +9,7 @@ package com.ddxx.proxy;
  * @author ddxx
  *
  */
-public class Proxy implements Sourceable {
+public class Proxy implements ISource {
 	
 	private Source source;
 	

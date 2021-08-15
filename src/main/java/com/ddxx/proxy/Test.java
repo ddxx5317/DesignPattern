@@ -2,7 +2,7 @@ package com.ddxx.proxy;
 public class Test {
  
 	public static void main(String[] args) {
-		Sourceable source = new Proxy();
+		ISource source = new Proxy();
 		source.method();
 	}
  
