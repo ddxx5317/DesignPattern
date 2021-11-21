@@ -6,7 +6,7 @@ package com.ddxx.singletons;
  *
  */
 public class Singleton3 {
-	private static Singleton3 single; // 声明静态的单例对象的变量
+	private static volatile Singleton3 single; // 声明静态的单例对象的变量
 	private Singleton3() {} // 私有构造方法
 	public static Singleton3 getSingle() { // 外部通过此方法可以获取对象
 		if (single == null) {

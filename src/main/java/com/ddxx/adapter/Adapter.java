@@ -5,7 +5,7 @@ package com.ddxx.adapter;
  * 目标接口时Targetable，通过Adapter类，将Source的功能扩展到Targetable里
  *
  */
-public class Adapter extends Source implements Targetable {
+public class Adapter extends Source implements Target {
  
 	@Override
 	public void method2() {
